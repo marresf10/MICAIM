@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "818351870124",
+    "firebase_url": "https://micaim2-default-rtdb.firebaseio.com",
+    "project_id": "micaim2",
+    "storage_bucket": "micaim2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:e206d843983ba0c9c8cf09",
+        "android_client_info": {
+          "package_name": "com.Aplicacion.Aire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:ab3e69b8178bf319c8cf09",
+        "android_client_info": {
+          "package_name": "com.example.dilana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:bfb34b9c786aedf8c8cf09",
+        "android_client_info": {
+          "package_name": "com.example.micaim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:f29e3ccea484f21dc8cf09",
+        "android_client_info": {
+          "package_name": "com.example.micaim2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:3b86d88d62f645a2c8cf09",
+        "android_client_info": {
+          "package_name": "com.example.pruebamovil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818351870124:android:eb095623b9c6edcac8cf09",
+        "android_client_info": {
+          "package_name": "com.example.pruebamoviles2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz0v1-O5YG7BLJfQeV_7eoMlhPqYvt8HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
