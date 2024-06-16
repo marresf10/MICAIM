@@ -1,5 +1,6 @@
 package com.example.micaim;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+
 import com.example.micaim.adapters.SensoresAdapter;
 import com.example.micaim.data.Sensores;
 import com.example.micaim.models.Sensor;
@@ -47,24 +49,25 @@ public class MainActivity extends AppCompatActivity {
 
         datosSensores();
     }
-/*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.action_button) {
-            // Handle button click here
-            Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show();
+        int id = item.getItemId();
+        if (id == R.id.graficas) {
+            Toast.makeText(this, "Graficas", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, module_graphics.class);
+            startActivity(intent);
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        return true;
     }
-*/
+
     private void datosSensores() {
         sensoresRef = FirebaseDatabase.getInstance().getReference().child("sensores");
         sensoresRef.addValueEventListener(new ValueEventListener() {

@@ -46,4 +46,6 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-database")
 
+    //Libreria pa' las graficas
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
