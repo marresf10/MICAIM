@@ -38,6 +38,7 @@ public class module_graphics extends AppCompatActivity {
     }
 
     private void setGraphic1() {
+        // Primer grafica (Semanal)
         BarChart barChart = findViewById(R.id.chart);
         barChart.getAxisRight().setDrawLabels(false);
 
@@ -47,6 +48,8 @@ public class module_graphics extends AppCompatActivity {
         entries.add(new BarEntry(2, 65f));
         entries.add(new BarEntry(3, 38f));
         entries.add(new BarEntry(4, 2f));
+        entries.add(new BarEntry(5, 30f));
+        entries.add(new BarEntry(6, 50f));
 
         YAxis yAxis = barChart.getAxisLeft();
         yAxis.setAxisMaximum(100f);
@@ -55,7 +58,7 @@ public class module_graphics extends AppCompatActivity {
         yAxis.setAxisLineColor(Color.BLACK);
         yAxis.setLabelCount(10);
 
-        BarDataSet dataSet = new BarDataSet(entries, "Sensores");
+        BarDataSet dataSet = new BarDataSet(entries, "Semanal");
         dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
 
         BarData barData = new BarData(dataSet);
@@ -64,10 +67,44 @@ public class module_graphics extends AppCompatActivity {
         barChart.getDescription().setEnabled(false);
         barChart.invalidate();
 
-        barChart.getXAxis().setValueFormatter(new IndexAxisValueFormatter(xValues));
+        List<String> xValuesSemana = Arrays.asList("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+        barChart.getXAxis().setValueFormatter(new IndexAxisValueFormatter(xValuesSemana));
         barChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
         barChart.getXAxis().setGranularity(1f);
         barChart.getXAxis().setGranularityEnabled(true);
+
+        // Segunda grafica (Mensual)
+        BarChart barChart2 = findViewById(R.id.chart2);
+        barChart2.getAxisRight().setDrawLabels(false);
+
+        ArrayList<BarEntry> entries2 = new ArrayList<>();
+        entries2.add(new BarEntry(0, 50f));
+        entries2.add(new BarEntry(1, 70f));
+        entries2.add(new BarEntry(2, 90f));
+        entries2.add(new BarEntry(3, 20f));
+        entries2.add(new BarEntry(4, 10f));
+
+        YAxis yAxis2 = barChart2.getAxisLeft();
+        yAxis2.setAxisMaximum(100f);
+        yAxis2.setAxisMinimum(0f);
+        yAxis2.setAxisLineWidth(2f);
+        yAxis2.setAxisLineColor(Color.BLACK);
+        yAxis2.setLabelCount(10);
+
+        BarDataSet dataSet2 = new BarDataSet(entries2, "Mensual");
+        dataSet2.setColors(ColorTemplate.MATERIAL_COLORS);
+
+        BarData barData2 = new BarData(dataSet2);
+        barChart2.setData(barData2);
+
+        barChart2.getDescription().setEnabled(false);
+        barChart2.invalidate();
+
+        List<String> xValuesMes = Arrays.asList("Semana 1", "Semana 2", "Semana 3", "Semana 4", "Semana 5");
+        barChart2.getXAxis().setValueFormatter(new IndexAxisValueFormatter(xValuesMes));
+        barChart2.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
+        barChart2.getXAxis().setGranularity(1f);
+        barChart2.getXAxis().setGranularityEnabled(true);
     }
 
     private void setupToolbar() {
