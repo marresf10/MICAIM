@@ -73,10 +73,10 @@ public class module_graphics extends AppCompatActivity {
                 if (snapshot.exists()) {
                     Float lunes = snapshot.child("Lunes").getValue(Float.class);
                     Float martes = snapshot.child("Martes").getValue(Float.class);
-                    Float miercoles = snapshot.child("Miercoles").getValue(Float.class);
+                    Float miercoles = snapshot.child("Miércoles").getValue(Float.class);
                     Float jueves = snapshot.child("Jueves").getValue(Float.class);
                     Float viernes = snapshot.child("Viernes").getValue(Float.class);
-                    Float sabado = snapshot.child("Sabado").getValue(Float.class);
+                    Float sabado = snapshot.child("Sábado").getValue(Float.class);
                     Float domingo = snapshot.child("Domingo").getValue(Float.class);
 
                     if (lunes != null && martes != null && miercoles != null && jueves != null && viernes != null && sabado != null && domingo != null) {

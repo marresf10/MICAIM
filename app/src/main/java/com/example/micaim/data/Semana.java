@@ -1,15 +1,15 @@
 package com.example.micaim.data;
 
 public class Semana {
-    float lunes, martes, miercoles, jueves, viernes, sabado, domingo;
+    float lunes, martes, miércoles, jueves, viernes, sábado, domingo;
 
-    public Semana(float lunes, Float martes, float miercoles, float jueves, float viernes, float sabado, float domingo){
+    public Semana(float lunes, Float martes, float miércoles, float jueves, float viernes, float sábado, float domingo){
         this.lunes = lunes;
         this.martes = martes;
-        this.miercoles = miercoles;
+        this.miércoles = miércoles;
         this.jueves = jueves;
         this.viernes = viernes;
-        this.sabado = sabado;
+        this.sábado = sábado;
         this.domingo = domingo;
     }
 
@@ -18,10 +18,10 @@ public class Semana {
         return "Semana{" +
                 "Lunes=" + lunes +
                 ", Martes=" + martes +
-                ", Miercoles=" + miercoles +
+                ", Miércoles=" + miércoles +
                 ", Jueves=" + jueves +
                 ", Viernes=" + viernes +
-                ", Sabado=" + sabado +
+                ", Sábado=" + sábado +
                 ", Domingo=" + domingo +
                 '}';
     }
@@ -31,13 +31,13 @@ public class Semana {
 
     public float getMartes() { return martes; }
 
-    public float getMiercoles() { return miercoles; }
+    public float getMiercoles() { return miércoles; }
 
     public float getJueves() { return jueves; }
 
     public float getViernes() { return viernes; }
 
-    public float getSabado() { return sabado; }
+    public float getSabado() { return sábado; }
 
     public float getDomingo() { return domingo; }
 
