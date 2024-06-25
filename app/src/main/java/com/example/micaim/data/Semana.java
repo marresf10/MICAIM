@@ -16,13 +16,13 @@ public class Semana {
     @Override
     public String toString() {
         return "Semana{" +
-                "Lunes=" + lunes +
-                ", Martes=" + martes +
-                ", Miércoles=" + miércoles +
-                ", Jueves=" + jueves +
-                ", Viernes=" + viernes +
-                ", Sábado=" + sábado +
-                ", Domingo=" + domingo +
+                "lunes=" + lunes +
+                ", martes=" + martes +
+                ", miércoles=" + miércoles +
+                ", jueves=" + jueves +
+                ", viernes=" + viernes +
+                ", sábado=" + sábado +
+                ", domingo=" + domingo +
                 '}';
     }
 

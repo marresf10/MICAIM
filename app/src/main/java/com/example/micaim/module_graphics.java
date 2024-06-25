@@ -71,13 +71,13 @@ public class module_graphics extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 listSemana.clear();
                 if (snapshot.exists()) {
-                    Float lunes = snapshot.child("Lunes").getValue(Float.class);
-                    Float martes = snapshot.child("Martes").getValue(Float.class);
-                    Float miercoles = snapshot.child("Miércoles").getValue(Float.class);
-                    Float jueves = snapshot.child("Jueves").getValue(Float.class);
-                    Float viernes = snapshot.child("Viernes").getValue(Float.class);
-                    Float sabado = snapshot.child("Sábado").getValue(Float.class);
-                    Float domingo = snapshot.child("Domingo").getValue(Float.class);
+                    Float lunes = snapshot.child("lunes").getValue(Float.class);
+                    Float martes = snapshot.child("martes").getValue(Float.class);
+                    Float miercoles = snapshot.child("miércoles").getValue(Float.class);
+                    Float jueves = snapshot.child("jueves").getValue(Float.class);
+                    Float viernes = snapshot.child("viernes").getValue(Float.class);
+                    Float sabado = snapshot.child("sábado").getValue(Float.class);
+                    Float domingo = snapshot.child("domingo").getValue(Float.class);
 
                     if (lunes != null && martes != null && miercoles != null && jueves != null && viernes != null && sabado != null && domingo != null) {
                         listSemana.add(new Semana(lunes, martes, miercoles, jueves, viernes, sabado, domingo));
