@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 
@@ -48,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(sensoresAdapter);
 
         datosSensores();
+
+        // Suscripción al tópico "alertas"
+        FirebaseMessaging.getInstance().subscribeToTopic("alertas")
+                .addOnCompleteListener(task -> {
+                    String msg = "Suscripción exitosa";
+                    if (!task.isSuccessful()) {
+                        msg = "Fallo en la suscripción";
+                    }
+                    Log.d("FCM", msg);
+                    Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                });
     }
 
     @Override
