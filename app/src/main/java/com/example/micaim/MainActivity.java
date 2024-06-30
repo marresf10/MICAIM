@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         datosSensores();
 
-        // Suscripción al tópico "alertas"
+        // Suscripción al tópico "alertas" .....
         FirebaseMessaging.getInstance().subscribeToTopic("alertas")
                 .addOnCompleteListener(task -> {
                     String msg = "Suscripción exitosa";

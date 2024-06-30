@@ -7,7 +7,7 @@ import android.app.NotificationManager;
 import android.os.Build;
 import android.util.Log;
 import androidx.core.app.NotificationCompat;
-
+//Modulo de mensajes
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "FCMService";
