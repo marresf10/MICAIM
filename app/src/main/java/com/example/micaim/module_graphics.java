@@ -108,11 +108,11 @@ public class module_graphics extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 listMes.clear();
                 if (snapshot.exists()) {
-                    Float Semana1 = snapshot.child("Semana1").getValue(Float.class);
-                    Float Semana2 = snapshot.child("Semana2").getValue(Float.class);
-                    Float Semana3 = snapshot.child("Semana3").getValue(Float.class);
-                    Float Semana4 = snapshot.child("Semana4").getValue(Float.class);
-                    Float Semana5 = snapshot.child("Semana5").getValue(Float.class);
+                    Float Semana1 = snapshot.child("semana1").getValue(Float.class);
+                    Float Semana2 = snapshot.child("semana2").getValue(Float.class);
+                    Float Semana3 = snapshot.child("semana3").getValue(Float.class);
+                    Float Semana4 = snapshot.child("semana4").getValue(Float.class);
+                    Float Semana5 = snapshot.child("semana5").getValue(Float.class);
 
                     if (Semana1 != null && Semana2 != null && Semana3 != null && Semana4 != null && Semana5 != null) {
                         listMes.add(new Mes(Semana1, Semana2, Semana3, Semana4, Semana5));
